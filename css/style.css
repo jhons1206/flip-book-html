@@ -22,6 +22,10 @@ button {
     transition: transform 0.5s;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+}
+
 .book,
 #prev-btn,
 #next-btn {
@@ -89,13 +93,14 @@ button {
         justify-content: center;
         align-items: center;
         height: 100vh;
+        overflow-x: hidden;
     }
 
     /* Book */
     .book {
         position: relative;
-        width: 450px;
-        height: 450px;
+        width: 512px;
+        height: 512px;
         transition: transform 0.5s;
         margin-top: -48px;
     }
@@ -153,8 +158,9 @@ button {
         border: none;
         background-color: transparent;
         cursor: pointer;
-        margin: 0 60px;
+        margin: 0 10px;
         transition: transform 0.5s;
+        z-index: 10000;
     }
 
     button:focus {
@@ -230,5 +236,41 @@ button {
 
     #btn-exit-fullscreen {
         display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Book */
+    .book {
+        width: 600px;
+        height: 600px;
+    }
+
+    button {
+        margin: 0 50px;
+    }
+}
+
+@media (min-width: 1400px) {
+    /* Book */
+    .book {
+        width: 680px;
+        height: 680px;
+    }
+
+    button {
+        margin: 0 90px;
+    }
+}
+
+@media (min-width: 1600px) {
+    /* Book */
+    .book {
+        width: 740px;
+        height: 740px;
+    }
+
+    button {
+        margin: 0 210px;
     }
 }

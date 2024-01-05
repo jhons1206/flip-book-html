@@ -6,7 +6,9 @@
         <title>Flip Book</title>
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <script src="https://kit.fontawesome.com/4b4bb4fbf5.js" crossorigin="anonymous" defer></script>
         <script src="js/main.js" defer></script>
     </head>
     <body id="flip-book">
@@ -15,7 +17,7 @@
             <i class="fas fa-arrow-circle-left"></i>
         </button>
 
-        <!-- Book -->
+        <!-- Flip Book -->
         <div id="book" class="book">
             <!-- Paper 1 -->
             <div id="p1" class="paper">
@@ -182,10 +184,13 @@
                 <img src="images/front-9.png" alt="Página 16" />
                 <img src="images/back-9.png" alt="Página 17" />
             </div>
+            <nav class="controls">
+                <a href="#" id="PREV" class="bxPrev"></a>
+                <a href="#" id="NEXT" class="bxNext"></a>
+            </nav>
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     </body>
 </html>
